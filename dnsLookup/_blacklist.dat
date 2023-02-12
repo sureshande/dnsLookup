@@ -1,0 +1,41 @@
+#
+# _blacklist.dat  -- contains address ranges to always be blocked.
+#                    IPv4 and IPv6 addressing are supported.
+#
+#   legal range formats are:
+#
+#       IPv4 - 
+#       255.255.255.255                 Single address
+#       255.255.255.255/16              CIDR Mask
+#       255.255.255.255/255.255.0.0     address w/mask
+#       255.255.*.*                     wildcards
+#       255.255.255.0-255.255.255.255   low to high address
+#
+#       IPv6 -
+#       2001:0db8:85a3:0042:1000:8a2e:0370:7334     single address
+#       2001:0db8:85a3:0042:1000:8a2e:0370:7334/64  CIDR Mask
+#       2001:0db8:85a3:0042:1000:8a2e:0370:7334/ffff:ffff:ffff:ffff::
+##                                                  address w/mask
+#       2001:0db8:85a3:0042:1000:8a2e:0370:7000-2001:0db8:85a3:0042:1000:8a2e:0370:7fff
+##                                                  low to high address
+#       
+#   Comments may be added to a line starting with '#' character
+#   and inline comments may be added starting with '#' character.   
+#
+#
+# A comment line
+
+200.0.0.0/8    # an inline comment
+#
+78.34.23.64-78.34.23.79
+#
+156.0.0.0/255.255.0.0
+ 
+## Blank lines are allowed
+##
+25.128.0.0 - 25.128.128.0
+
+# IPv6 Range
+2001:0db8:85a3:0042:1000:8a2e:0370:7334/112
+1f00::-1f00::01f0
+f555::/ffff::

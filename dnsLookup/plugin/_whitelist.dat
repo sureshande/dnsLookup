@@ -1,0 +1,38 @@
+#
+# _whitelist.dat  -- contains address ranges to always be passed.
+#                    IPv4 and IPv6 addressing are supported.
+#
+#   legal range formats are:
+#
+#       IPv4 -
+#       255.255.255.255                 Single address
+#       255.255.255.255/16              CIDR Mask
+#       255.255.255.255/255.255.0.0     address w/mask
+#       255.255.*.*                     wildcards
+#       255.255.255.0-255.255.255.255   low to high address
+#
+#       IPv6 -
+#       2001:0db8:85a3:0042:1000:8a2e:0370:7334     single address
+#       2001:0db8:85a3:0042:1000:8a2e:0370:7334/64  CIDR Mask
+#       address w/mask
+#       2001:0db8:85a3:0042:1000:8a2e:0370:7334/ffff:ffff:ffff:ffff::
+#       low to high address
+#       2001:0db8:85a3:0042:1000:8a2e:0370:7000-2001:0db8:85a3:0042:1000:8a2e:0370:7fff
+#       
+#   Comments may be added to a line starting with '#' character
+#   and inline comments may be added starting with '#' character.   
+#
+127.0.0.1/24    # localhost IPv4
+::1             # localhost IPv6
+
+#local Network IPs
+10.0.0.0/8
+169.254.0.0-169.254.255.255  # (APIPA)
+172.16.0.0-172.31.255.255
+192.168.*.*
+     
+200.0.0.1
+25.128.25.0/255.255.255.0
+
+2001:0db8:85a3:0042:1000:8a2e:0370:7334    #IPv6 addresses
+1f00:0:0:0:0:0:0:110

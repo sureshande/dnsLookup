@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="test.css">
+        <title>Blacklist Checker</title>
+    </head>
+    <body data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="0">
+        <div id="gatsby&quot;">
+           <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
+              <div class="wrapper" style="overflow: hidden;">
+                 <main id="main" class="main" role="main" tabindex="-1" style="margin-top: 50px;">
+                    <div class="hero-box">
+                       <div class="hero-box__inner">
+                          <div class="hero-box__background"><img src="/static/blacklist-bg-b8b944f9cb8932ea9271bef6f2a925dd.jpg" alt="Man looking at his cell phone checking his business status to make sure he is not on any email blacklists." width="1800" height="307"></div>
+                          <h1 class="h1">Blacklist Checker</h1>
+                       </div>
+                    </div>
+                    <div class="checker-block aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                       <div class="checker-block__outer">
+                          <div class="checker-block__inner">
+                             <div class="checker-block__text">
+                                <h2 class="h3">Is your domain or IP blacklisted?</h2>
+                                <p>Being added to an email blacklist affects your entire email communication. Transactional and marketing emails accomplish their goals only when they reach people’s inboxes, and getting blacklisted won’t help.</p>
+                                <p>Email servers and spam filters use blacklisting to help curb mass emailing and SPAM communications. These web hosting companies sometimes block an entire IP range if an address is labeled a SPAMMER. And if you’re in the same range, you get blocked as well – even if you are a legitimate sender.</p>
+                                <p>Lawful businesses get added to blacklists every day. Their email sending is blocked and they can’t reach their customers. There’s great value in being aware when your IP or domain are on a blacklist.</p>
+                                <p>That’s why we created this tool: to help you keep a healthy sender score and maximize your inbox placement.</p>
+                                <p>Using our blacklist checker tool will allow you to verify your status with over 300 IP blacklists. And if anything is wrong, you’ll know who to contact about having your IP removed from the blacklist.</p>
+                                <p>We’ll guide you through the process: please reach out to our customer support team if you have any questions.</p>
+                                <p>Don’t forget to check BOTH your IP address and domain.</p>
+                             </div>
+                             <div class="checker-block__body">
+                                <div class="blacklist-validator">
+                                   <form action="?" method="post" data-gtm-form-interact-id="0">
+                                      <div class="blacklist-validator__form-control"><label for="blacklist-validator">IP or Domain Name</label><input type="text" class="" aria-label="IP or Domain Name" id="blacklist-validator" name="blacklist-validator" value="47.87.165.65" data-gtm-form-interact-field-id="0"></div>
+                                      <button class="btn btn--primary blacklist-validator__form-btn " type="submit">Submit</button>
+                                   </form>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div>
+                       <h3 class="h5 text-center mb-4" id="results-table"></h3>
+                    </div>
+                    <div class="blacklist-table">
+                       <div class="blacklist-table__inner">
+                          <div class="blacklist-table__filters">
+                             <h3 class="h4">Filter</h3>
+                             <ul>
+                                <li>
+                                   <div class="blacklist-table__filter">
+                                      <input type="checkbox" id="field-incomplete">
+                                      <label for="field-incomplete">
+                                         <span class="blacklist-table__filter-icon">
+                                            <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                               <g fill="none" fill-rule="evenodd">
+                                                  <path d="M1.377 5.018c.719.548 1.438 1.067 2.156 1.587C5.06 4.614 6.617 2.653 8.143.69c.63.433 1.228.865 1.857 1.327A1746.043 1746.043 0 003.982 9.69C2.665 8.711 1.317 7.758 0 6.777c.449-.577.898-1.154 1.377-1.76v.001z" fill="#FFF"></path>
+                                               </g>
+                                            </svg>
+                                         </span>
+                                         <div class="blacklist-status"><i class="status-incidator is-incomplete"></i><span>incomplete</span></div>
+                                         &nbsp; (0)
+                                      </label>
+                                   </div>
+                                </li>
+                                <li>
+                                   <div class="blacklist-table__filter">
+                                      <input type="checkbox" id="field-notlisted">
+                                      <label for="field-notlisted">
+                                         <span class="blacklist-table__filter-icon">
+                                            <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                               <g fill="none" fill-rule="evenodd">
+                                                  <path d="M1.377 5.018c.719.548 1.438 1.067 2.156 1.587C5.06 4.614 6.617 2.653 8.143.69c.63.433 1.228.865 1.857 1.327A1746.043 1746.043 0 003.982 9.69C2.665 8.711 1.317 7.758 0 6.777c.449-.577.898-1.154 1.377-1.76v.001z" fill="#FFF"></path>
+                                               </g>
+                                            </svg>
+                                         </span>
+                                         <div class="blacklist-status"><i class="status-incidator is-not-listed"></i><span>notlisted</span></div>
+                                         &nbsp; (144)
+                                      </label>
+                                   </div>
+                                </li>
+                                <li>
+                                   <div class="blacklist-table__filter">
+                                      <input type="checkbox" id="field-blacklisted">
+                                      <label for="field-blacklisted">
+                                         <span class="blacklist-table__filter-icon">
+                                            <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                               <g fill="none" fill-rule="evenodd">
+                                                  <path d="M1.377 5.018c.719.548 1.438 1.067 2.156 1.587C5.06 4.614 6.617 2.653 8.143.69c.63.433 1.228.865 1.857 1.327A1746.043 1746.043 0 003.982 9.69C2.665 8.711 1.317 7.758 0 6.777c.449-.577.898-1.154 1.377-1.76v.001z" fill="#FFF"></path>
+                                               </g>
+                                            </svg>
+                                         </span>
+                                         <div class="blacklist-status"><i class="status-incidator is-blacklisted"></i><span>blacklisted</span></div>
+                                         &nbsp; (4)
+                                      </label>
+                                   </div>
+                                </li>
+                                <li>
+                                   <div class="blacklist-table__filter">
+                                      <input type="checkbox" id="field-other">
+                                      <label for="field-other">
+                                         <span class="blacklist-table__filter-icon">
+                                            <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                               <g fill="none" fill-rule="evenodd">
+                                                  <path d="M1.377 5.018c.719.548 1.438 1.067 2.156 1.587C5.06 4.614 6.617 2.653 8.143.69c.63.433 1.228.865 1.857 1.327A1746.043 1746.043 0 003.982 9.69C2.665 8.711 1.317 7.758 0 6.777c.449-.577.898-1.154 1.377-1.76v.001z" fill="#FFF"></path>
+                                               </g>
+                                            </svg>
+                                         </span>
+                                         <div class="blacklist-status">
+                                            <i class="status-incidator is-other">
+                                               <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                                  <g fill-rule="nonzero" fill="none">
+                                                     <path d="M5.916 5.982h6c0 3.198-2.706 5.838-6 5.838a6.137 6.137 0 01-2.94-.75l2.94-5.088z" fill="#00C"></path>
+                                                     <path d="M6 5.898l-3 5.196C.234 9.492-.696 5.832.948 2.982A6.17 6.17 0 013.066.81L6 5.898z" fill="#FFF200"></path>
+                                                     <path d="M6.048 5.982l-3-5.196C5.82-.816 9.456.216 11.1 3.06c.516.888.798 1.896.822 2.916H6.048v.006z" fill="#593F12"></path>
+                                                  </g>
+                                               </svg>
+                                            </i>
+                                            <span>other</span>
+                                         </div>
+                                         &nbsp; (0)
+                                      </label>
+                                   </div>
+                                </li>
+                                <li>
+                                   <div class="blacklist-table__filter">
+                                      <input type="checkbox" id="field-whitelisted">
+                                      <label for="field-whitelisted">
+                                         <span class="blacklist-table__filter-icon">
+                                            <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                               <g fill="none" fill-rule="evenodd">
+                                                  <path d="M1.377 5.018c.719.548 1.438 1.067 2.156 1.587C5.06 4.614 6.617 2.653 8.143.69c.63.433 1.228.865 1.857 1.327A1746.043 1746.043 0 003.982 9.69C2.665 8.711 1.317 7.758 0 6.777c.449-.577.898-1.154 1.377-1.76v.001z" fill="#FFF"></path>
+                                               </g>
+                                            </svg>
+                                         </span>
+                                         <div class="blacklist-status"><i class="status-incidator"></i><span>whitelisted</span></div>
+                                         &nbsp; (0)
+                                      </label>
+                                   </div>
+                                </li>
+                             </ul>
+                          </div>
+                          <div class="blacklist-table__content">
+                             <div class="blacklist-table__head">
+                                <div class="blacklist-table__row">
+                                   <div class="blacklist-table__cell cell--size1"><strong>Name</strong></div>
+                                   <div class="blacklist-table__cell cell--size2"><strong>DNS</strong></div>
+                                   <div class="blacklist-table__cell cell--size3"><strong>URL</strong></div>
+                                   <div class="blacklist-table__cell cell--size4"><strong>Status</strong></div>
+                                </div>
+                             </div>
+                             <div class="blacklist-table__body">
+                                <div class="blacklist-table__row">
+                                   <div class="blacklist-table__cell cell--size1">
+                                      <strong>Name</strong>
+                                      <p>ZapBL DNSRBL</p>
+                                   </div>
+                                   <div class="blacklist-table__cell cell--size2">
+                                      <strong>DNS</strong>
+                                      <p>dnsbl.zapbl.net</p>
+                                   </div>
+                                   <div class="blacklist-table__cell cell--size3">
+                                      <strong>URL</strong>
+                                      <p><a href="http://zapbl.net/" target="_blank" rel="noopener noreferrer nofollow">http://zapbl.net/</a></p>
+                                   </div>
+                                   <div class="blacklist-table__cell cell--size4">
+                                      <strong>Status</strong>
+                                      <div class="blacklist-status"><i class="status-incidator is-not-listed"></i><span>NotListed</span></div>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </main>
+              </div>
+           </div>
+           <div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div>
+        </div>
+        <div id="vldt-unmoderated-testing" class="vldt-installed" style="display: none;"></div>
+     </body>
+</html>
